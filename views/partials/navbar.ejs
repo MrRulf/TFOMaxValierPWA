@@ -1,0 +1,49 @@
+<nav class="sidebar box-shadow-right">
+
+    <ul>
+
+        <% if(locals.links){
+
+            for(let i = 0; i < links.length; i++){
+
+                %>
+                <a <% if(locals.selected && selected['id'] == i ){ %> class="selected" <%}%>
+                    
+                    <% if(links[i]['useIFrame']){ %>
+
+                        href="<%= url + '/' + i + '/site'%>"
+                    
+                    <% }else{
+                        
+                        if(links[i]['url'] && !(links[i]['url'] === "")){
+                        
+                        %>
+
+                            href="<%= links[i]['url']%>"
+                            target="_blank"
+
+                    <% }} %>
+                    >
+                    
+                    <li>
+
+                        <%
+
+                            if(links[i]['icon'] && !(links[i]['icon'] === "")){ %>
+
+                        <img src="<%= links[i]['icon'] %>" alt="icon">
+
+                        <% } %>
+
+                        <%= links[i]['name'] %>
+                    </li>
+                </a>
+                <%
+
+            }
+
+        } %>
+
+    </ul>
+
+</nav>

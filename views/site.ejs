@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <%- include("partials/head.ejs") %>
+
+        <title><%= selected['name'] %></title>
+
+        <link rel="stylesheet" href="<%= url %>/resources/css/site_page.css">
+
+    </head>
+
+    <body>
+
+        <%- include("partials/navbar.ejs") %>
+
+        <main>
+
+            <iframe src="<%= selected['url'] %>" frameborder="0" >IFrames wurde blockiert</iframe>
+
+        </main>
+
+        <%- include("partials/footer.ejs") %>
+
+    </body>
+
+</html>

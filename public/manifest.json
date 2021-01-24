@@ -1,0 +1,36 @@
+{
+    
+    "name": "TFO Max Valier",
+    "short_name": "TFO Max Valier",
+    "start_url": "/",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "display": "standalone",
+    "icons": [
+
+        {
+
+            "src": "assets/images/logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+
+        },
+        {
+
+            "src": "assets/images/maskable_logo.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+
+        },
+        {
+
+            "src": "assets/images/splashscreen.png",
+            "sizes": "512x512",
+            "type": "image/png"
+
+        }
+
+    ]
+
+}
