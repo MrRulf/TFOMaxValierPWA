@@ -79,10 +79,12 @@ crossorigin="anonymous"></script>
 
             if(switchBtn.is(":checked")){
 
-                $('body').addClass("dark");
+                document.documentElement.setAttribute('data-theme', 'dark');
 
             } else {
-                $('body').removeClass("dark");
+
+                document.documentElement.setAttribute('data-theme', 'light');
+
             }
 
         }

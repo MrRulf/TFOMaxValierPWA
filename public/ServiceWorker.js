@@ -3,7 +3,6 @@ const FILES_TO_CACHE = [
     "/offline",
     "/resources/css/base.css",
     "/resources/css/nav_style.css",
-    "/resources/css/darkmode.css",
     "/resources/css/forms.css",
     "/resources/css/offline_page.css",
     "/assets/images/logo.png",
