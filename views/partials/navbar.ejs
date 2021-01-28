@@ -1,3 +1,15 @@
+
+<div class="darkmode">
+    
+    <label class="switch">
+
+        <input type="checkbox">
+        <span class="slider"></span>
+
+    </label>
+
+</div>
+
 <nav class="sidebar box-shadow-right">
 
     <ul>
@@ -31,7 +43,7 @@
 
                             if(links[i]['icon'] && !(links[i]['icon'] === "")){ %>
 
-                        <img src="<%= links[i]['icon'] %>" alt="icon">
+                        <img src="<%= links[i]['icon'] %>" alt="<%= links[i]['name'] %> icon">
 
                         <% } %>
 

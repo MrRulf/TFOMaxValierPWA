@@ -1,0 +1,19 @@
+/* base.css */
+
+body.dark{ background-color: var(--dark_background); color: #fff; }
+body.dark a{ color: var(--dark_linkcolor); }
+
+/* forms.css */
+
+body.dark .switch .slider{ background-color: var(--dark_switch_background); }
+body.dark .switch .slider:before{ background-color: var(--dark_switch_slider); }
+body.dark .switch input:checked + .slider{ background-color: var(--dark_switch_background_selected); }
+body.dark .switch input:focus + .slider { box-shadow: 0 0 1px var(--dark_switch_background_selected); }
+
+/* nav_style.css */
+
+body.dark .box-shadow-right:after{ background-color: var(--dark_nav_border); }
+body.dark nav.sidebar ul a:not(:last-child){ border-color: var(--dark_nav_border); }
+body.dark nav.sidebar a{ background-color: var(--dark_background); }
+body.dark nav.sidebar a:hover{ background-color: var(--dark_nav_link_hover); }
+body.dark nav.sidebar a.selected{ color: var(--dark_nav_link_selected); }
